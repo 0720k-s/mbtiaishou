@@ -1,36 +1,16 @@
-# discordpy-startup
+# MBTI診断＆AIリアクション Discord Bot
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## 概要
 
-- Herokuでdiscord.pyを始めるテンプレートです。
-- Use Template からご利用ください。
-- 使い方はこちら： [Discord Bot 最速チュートリアル【Python&Heroku&GitHub】 - Qiita](https://qiita.com/1ntegrale9/items/aa4b373e8895273875a8)
+このリポジトリは、**Discordサーバー上で動くMBTI診断Bot＋AIリアクションBot**のサンプルです。
+- MBTI診断（24問＋サブタイプ4問）のやりとり・診断履歴保存・傾向グラフ画像送信機能つき。
+- GPT（OpenAI）/Gemini(Google) API連携で、ボットキャラの自然な返答も実装。
 
-## 各種ファイル情報
+## 主な機能
 
-### discordbot.py
-PythonによるDiscordBotのアプリケーションファイルです。
-
-### requirements.txt
-使用しているPythonのライブラリ情報の設定ファイルです。
-
-### Procfile
-Herokuでのプロセス実行コマンドの設定ファイルです。
-
-### runtime.txt
-Herokuでの実行環境の設定ファイルです。
-
-### app.json
-Herokuデプロイボタンの設定ファイルです。
-
-### .github/workflows/flake8.yaml
-GitHub Actions による自動構文チェックの設定ファイルです。
-
-### .gitignore
-Git管理が不要なファイル/ディレクトリの設定ファイルです。
-
-### LICENSE
-このリポジトリのコードの権利情報です。MITライセンスの範囲でご自由にご利用ください。
-
-### README.md
-このドキュメントです。
+- ボタン式で進むMBTI診断・診断履歴の保存/表示
+- 診断傾向をmatplotlibで画像グラフ化しDM送信
+- MBTIロール・履歴から相性診断を実施
+- AI（GPT/Gemini）による漫才風チャット対応
+- チャンネル新規投稿に自動リアクション追加
+- 管理者用コマンド（履歴削除、リアクション全削除 など
